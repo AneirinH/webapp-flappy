@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Eggsy's Runaway Tennis Ball</title>
+    <link rel="stylesheet" href="../assets/style.css"/>
+    <link rel="stylesheet" href="../lib/bootstrap.css"/>
+
+</head>
+<body>
+
+
+
+
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Eggsy The Runaway Tennis Ball </h1>
+            <p>Catch Eggsy's runaway Tennis ball!</p>
+        </div>
+
+        <button id="button">click me ya goon</button>
+
+
+
+        <div class="row center">
+            <center><div id="game"></div></center>
+        </div>
+
+        <img src="../assets/Chav%20tennis%20ball%202.jpg" class="img-rounded img-responsive image1" width="200px" height="150" />
+        <img src="../assets/L.png" class="img-rounded img-responsive image2" width="200px" height="150"  />
+        <img src="../assets/K.jpg" class="img-thumbnail img-responsive image3" width="200px" height="150" />
+
+
+    <div class="row center hardmode">
+        <a class="hardmode" href="http://localhost:63342/webapp-flappy/pages/example2.html">Hard mode click here</a>
+    </div>
+
+        <div class="col-md-3">
+        </div>
+
+        <div class="col-md-6 center" style="color: red;">
+            <p>The highest scores are:</p>
+            <div id="scoreBoard">
+            </div>
+        </div>
+
+        <div class="col-md-3">
+
+        </div>
+    </div>
+
+
+    <div id="greeting">
+        <h3>Save your score</h3>
+        <form id="greeting-form" method="post" action="/score">
+            <div class="form-group">
+
+                <label for="fullName">What's your name?</label>
+                <input type="text" id="fullName" class="form-control"
+                       name="fullName" placeholder="Eggsy The Chav ">
+
+                <label for="email">What's your email?</label>
+                <input type="email" id="email" class="form-control"
+                       name="email" placeholder="eggsy@tennisball.com">
+
+                <label for="fullName">What do you thnk of our game /10?</label>
+                <input type="number" id="email" class="form-control"
+                       name="fullName" placeholder="10/10">
+
+                <input type="hidden" id="score" name="score" value="0">
+
+            </div>
+            <button class="btn btn-default" type="submit">OK</button>
+        </form>
+    </div>
+
+
+
+
+    <script type="text/javascript" src="../lib/jquery.js"></script>
+    <script type="text/javascript" src="../lib/phaser.min.js"></script>
+    <script type="text/javascript" src="../js/flappy.js"></script>
+
+</body>
+</html>
+
